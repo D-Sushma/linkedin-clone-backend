@@ -23,6 +23,8 @@ app.use(
   cors({
     origin: [
       "http://localhost:3000",
+      "https://linkedin-clone-azure-six.vercel.app/",
+      "https://linkedin-clone-git-master-dsushmas-projects.vercel.app/",
       "https://linkedin-clone-k1uwgopyi-dsushmas-projects.vercel.app",
       "https://linkedin-clone-41r5bjrcz-dsushmas-projects.vercel.app",
     ], // frontend URLs
