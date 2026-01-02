@@ -21,16 +21,17 @@ const app = express();
 // Middleware
 app.use(
   cors({
-    origin: [
-      "http://localhost:3000",
-      "https://linkedin-clone-azure-six.vercel.app/",
-      "https://linkedin-clone-git-master-dsushmas-projects.vercel.app/",
-      "https://linkedin-clone-k1uwgopyi-dsushmas-projects.vercel.app",
-      "https://linkedin-clone-41r5bjrcz-dsushmas-projects.vercel.app",
-    ], // frontend URLs
+    origin: "*",
+    // origin: [
+    //   "http://localhost:3000",
+    //   "https://linkedin-clone-azure-six.vercel.app/",
+    //   "https://linkedin-clone-git-master-dsushmas-projects.vercel.app/",
+    //   "https://linkedin-clone-k1uwgopyi-dsushmas-projects.vercel.app",
+    //   "https://linkedin-clone-41r5bjrcz-dsushmas-projects.vercel.app",
+    // ], // frontend URLs
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"],
     allowedHeaders: ["Content-Type", "Authorization", "X-Requested-With"],
-    credentials: true,
+    // credentials: true,
   })
 );
 app.use(express.json());
